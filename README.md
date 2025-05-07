@@ -26,6 +26,7 @@ This project enables a Raspberry Pi-based system to interact with blockchain-bas
 ├── machine_ui.py             # Main UI interface
 ├── checklicensedetails.py   # Lists NFTs owned by wallet
 ├── start_machine.py         # Sends transaction to log machine start
+├── startIoT.py              # Start the IoT Device 
 ├── requirements.txt         # Python dependencies
 ├── license.desktop          # Launchable app shortcut (for Raspberry Pi GUI)
 ├── README.md
@@ -37,7 +38,7 @@ This project enables a Raspberry Pi-based system to interact with blockchain-bas
 
 - Raspberry Pi (or any Linux machine)
 - Python 3.7+
-- A blockchain wallet (with private key)
+- An Ethereum Blockchain wallet (MetaMask) 
 - Access to a Web3 provider (e.g., Infura, Alchemy)
 - NFTs minted from the smart contract must include:
   - `Machine ID`
@@ -68,16 +69,6 @@ source env/bin/activate
 
 ```bash
 pip install -r requirements.txt
-```
-
-### 4. Add your environment config
-
-Create a `.env` file or update your Web3 provider and private key directly in `start_machine.py` and `checklicensedetails.py`:
-
-```python
-PRIVATE_KEY = "your_private_key_here"
-WALLET_ADDRESS = "your_wallet_address_here"
-INFURA_URL = "https://sepolia.infura.io/v3/your_project_id"
 ```
 
 ---

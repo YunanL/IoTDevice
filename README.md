@@ -24,17 +24,16 @@ To obtain Sepolia ETH for transactions, you can use the following faucet:
 
 **Minting Process**
 
-Select Machine2 (For demonstration proposes, this project is specifically designed for Machine2).
+- Select Machine2 (For demonstration proposes, this project is specifically designed for Machine2).
 
-Enter any desired function (e.g., "cutting", "drilling", etc.).
+- Enter any desired function (e.g., "cutting", "drilling", etc.).
 
-Choose the desired usage duration.
+- Choose the desired usage duration.
 
-Click “Mint NFT” to complete the process.
+- Click “Mint NFT” to complete the process.
 
 Once minted, the license NFT will automatically be sent to the wallet assigned to Machine2:
-0xe78785561Cc77dE5251dfA68027D826CAB1FcFa1
-(Each machine has its own unique wallet address.)
+0xe78785561Cc77dE5251dfA68027D826CAB1FcFa1 (Each machine has its own unique wallet address.)
 
 **On-Chain License Verification by the Machine**
 
@@ -51,13 +50,13 @@ This enables the machine to autonomously determine:
 
 When the client initiates the machine:
 
-They select the desired license from a list (in case multiple licenses have been issued).
+- They select the desired license from a list (in case multiple licenses have been issued).
 
-Review all license details on the interface.
+- Review all license details on the interface.
 
-Press “Start Machine”.
+- Press “Start Machine”.
 
-Upon starting, a transaction will be sent on-chain from the Machine2 wallet, logging:
+- Upon starting, a transaction will be sent on-chain from the Machine2 wallet, logging:
 
 The Machine ID, The License (NFT) ID, and the timestamp of machine activation.
 

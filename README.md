@@ -49,13 +49,13 @@ This project enables a Raspberry Pi-based system to interact with blockchain-bas
 
 ---
 
-## 🧪 Setup Instructions
+## 🧪 Setup Instructions (on Linux Device)
 
 ### 1. Clone the repo
 
 ```bash
-git clone https://github.com/yourusername/blockchain-machine-ui.git
-cd blockchain-machine-ui
+git clone https://https://github.com/YunanL/IoTDevice.git
+cd -/IoTDevice
 ```
 
 ### 2. Create and activate a Python virtual environment

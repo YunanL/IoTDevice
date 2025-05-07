@@ -1,6 +1,6 @@
 # 🛠️ Blockchain-Based Machine License Interface
 
-This project enables a Raspberry Pi-based system to interact with blockchain-based licenses (represented as NFTs). It provides a GUI for operators to check license availability and start machines if a valid license NFT is present. It also logs machine start events on-chain.
+This project enables a Raspberry Pi-based system to interact with blockchain-based licenses (represented as NFTs). It provides a GUI for operators to check license availability and start machines if a valid license NFT is present. It also logs machine start events on-chain. For demonstration proposes, the private key and public key are all written in config. 
 
 ---
 

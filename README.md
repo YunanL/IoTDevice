@@ -14,9 +14,14 @@ This project enables a Raspberry Pi-based system to interact with blockchain-bas
 
 ---
 
-## 📷 Preview
+## 📷 Functionalities
 
-<img src="screenshot.png" alt="Machine UI" width="600">
+First thing first, you need to mint an Machine License NFT at https://mint-machine-license.vercel.app/,
+this is a web3 Website we developed to mint the license, you can use any ethereum wallet and switch the 
+network to sepolia testnet, and get some sepolia eth from here: https://www.alchemy.com/faucets/ethereum-sepolia
+now you are ready to mint, select Machine2 (this project is designed for Machine2), write random function as
+you wish, and select Duration, then click 'Mint NFT'. The NFT will be minted and it will directly send to the 
+wallet of Machine2. 
 
 ---
 
@@ -73,48 +78,25 @@ pip install -r requirements.txt
 
 ---
 
-## 🖥️ Running the UI
+## 🖥️ Running the IoT
 
 ```bash
-python3 machine_ui.py
+python3 startIoT.py
 ```
 
-Or from Raspberry Pi desktop by creating a `.desktop` file:
+Or from Raspberry Pi desktop by creating a `.desktop` file 
+(by Exec'/home/pi/myenv/bin/python' use the python on your env path
+and '/home/pi/startIoT.py' should be the path where startIoT is located):
 
 ```ini
 [Desktop Entry]
 Name=Machine License UI
 Comment=Raspberry Pi Machine NFT Checker
-Exec=bash -c "source /home/pi/env/bin/activate && python3 /home/pi/machine_ui.py"
-Icon=utilities-terminal
+Exec=/home/pi/myenv/bin/python /home/pi/startIoT.py
+Icon=computer
 Terminal=false
 Type=Application
 Categories=Utility;
-```
-
----
-
-## 🔗 Smart Contract Requirements
-
-Ensure your NFT contract exposes:
-
-```solidity
-function tokenURI(uint256 tokenId) public view returns (string memory);
-function ownerOf(uint256 tokenId) public view returns (address);
-```
-
-And metadata is structured like:
-
-```json
-{
-  "name": "Machine License",
-  "attributes": [
-    { "trait_type": "Machine ID", "value": "1" },
-    { "trait_type": "Function", "value": "Drilling" },
-    { "trait_type": "Usage Duration", "value": "7 Days" },
-    { "trait_type": "Expires On", "value": "2025-06-01T23:59:59Z" }
-  ]
-}
 ```
 
 ---

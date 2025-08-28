@@ -1,0 +1,27 @@
+[
+    {
+        "machine_id": "MCH-001",
+        "protocol_date": "2025-08-01T10:30:00Z",
+        "temperature": 72.5
+    },
+    {
+        "machine_id": "MCH-002",
+        "protocol_date": "2025-08-01T11:00:00Z",
+        "temperature": 69.8
+    },
+    {
+        "machine_id": "MCH-003",
+        "protocol_date": "2025-08-02T09:15:00Z",
+        "temperature": 75.2
+    },
+    {
+        "machine_id": "MCH-001",
+        "protocol_date": "2025-08-02T14:45:00Z",
+        "temperature": 71.0
+    },
+    {
+        "machine_id": "MCH-004",
+        "protocol_date": "2025-08-03T08:20:00Z",
+        "temperature": 68.9
+    }
+]
